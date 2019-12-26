@@ -1,0 +1,76 @@
+// Codigo número 1
+#include <iostream>
+
+using namespace std;
+
+int main() 
+{ // inicia el programa 
+    int i = 10; //declaración de una variable tipo entero
+    float a = 1000.0; // declaracion de variable tipo float
+    
+    while(i > 0) // condición del ciclo donde i debe ser mayor que cero
+    {
+        i /= 2; // i es dividido entre 2
+        a /= 10; // a es dividido entre 10
+    }
+    
+    cout<<"El valor final de la variable 'a' es: "<<a<<endl; // arroja como resultado 0.1 para la variable a
+    return 0; // retorna
+} // termina programa
+
+---------------------------------------------------------------------------------------------------------------------------------
+// Codigo número 2
+#include <iostream>
+
+using namespace std;
+
+int main() 
+{
+    int i = 1, j = 2; // declaración de variables tipo enteros i,j 
+    
+    if(i > j && j > i) // condicion Si ambos son verdaderos se obtiene verdadero(true)
+        i++; // incremento i 
+    if(i > j || j > i) // condición verdadero si alguno es verdadero, si i mayor que j OR j mayor que i.
+        j++;// incrementa j
+    if(i | j) // condición OR binaria
+        i++;// incrementa i
+    if(i & j) // condición AND binaria
+        j++; // incrementa j
+    
+    cout<<i * j<<endl; // multiplica el incremento de i que fue 2 y el incremento de j que fue 4 y retorna 8
+    return 0;
+} // finaliza el programa
+
+------------------------------------------------------------------------------------------------------------------------------
+
+// Codigo número 3
+#include <iostream>
+
+using namespace std;
+
+int main() 
+{
+    for(int i = 0; i < 4; ++i)
+    {
+        switch(i) // donde i es la variable a comparar
+        {
+            case 0: cout<<"0"; // bloque de intruccion cero, e imprime en pantalla cero
+            case 1: cout<<"1"; continue; // bloque de instruccion 1 , e imprime dos "1" por el incremento del contador
+            case 2: cout<<"2"; break; // bloque de instruccion dos , e imprime numero 2
+            default: cout<<"D"; break; // como no hay caso tres imprime asterisco "*" y lo sigue la "D"
+        }
+        
+        cout<<"*"; // no hay case 3, entonces imprime el asterisco, ademas como el ciclo ya no se cumple como lo plantea la condicion entonces imprime un asterisco.
+    }
+    return 0; // al final el resultado que retorna es: 0112*D*
+}
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
